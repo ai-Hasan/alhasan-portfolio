@@ -129,7 +129,7 @@ html,
 :host {
   line-height: 1.5;
 
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 
   -moz-tab-size: 4;
 
