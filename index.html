@@ -7,55 +7,50 @@
   <title>Al Hasan Portfolio</title>
   <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body class="bg-[#111] text-white font-['Nunito']">
+  <section id="home-section" class="flex flex-col justify-between max-h-screen relative">
+    <div id="tsparticles"></div>
 
-  <section id="home-section" class="flex flex-col justify-between max-h-screen">
-    <header class="flex items-center justify-between w-full px-4 mt-8 max-w-screen-xl mx-auto">
+    <header
+      class="flex items-center justify-between w-full px-4 py-2 mt-4 max-w-screen-xl mx-auto sm:px-2 sm:py-1 sm:mt-2">
+
       <!-- Navbar Logo -->
       <img src="./assets/icons/name-logo.svg" alt="" />
       <!-- Navbar -->
       <nav class="p-4 rounded-md">
-        <div class="flex justify-center space-x-4">
-          <a href="#home-section" class="text-white text-xl  px-4 py-2 rounded-md hover-underline">About
+        <div class="flex justify-center space-x-2 sm:space-x-4">
+          <a href="#home-section" class="text-white text-xl px-2 sm:px-4 py-1 sm:py-2rounded-md hover-underline">About
             Me</a>
-          <a href="#projects-section" class="text-white text-xl px-4 py-2 rounded-md hover-underline"> Projects</a>
-          <a href="#myskills" class="text-white text-xl px-4 py-2 rounded-md hover-underline"> Skills</a>
+          <a href="#projects-section"
+            class="text-white text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md hover-underline">Projects</a>
+          <a href="#myskills" class="text-white text-xl px-2 sm:px-4 py-1 sm:py-2rounded-md hover-underline">Skills</a>
         </div>
       </nav>
-
-
-
       <!-- Social Links -->
       <div class="flex gap-4">
         <a href="tel:9198893318">
-          <img class="hover:scale-110 transition-transform duration-200" src=" ./assets/icons/phone.svg"
-            alt="Phone Icon" class="w-6 h-6" />
+          <img class="hover:scale-110 transition-transform duration-200" src="./assets/icons/phone.svg" alt="Phone Icon"
+            class="w-6 h-6" />
         </a>
         <a href="https://wa.me/9198893318?text=Hi, How are you?" target="_blank" rel="noopener">
           <img class="hover:scale-110 transition-transform duration-200" src="./assets/icons/whatsapp.svg"
             alt="WhatsApp Icon" class="w-6 h-6" />
         </a>
       </div>
-
     </header>
 
-
-    <!-- Main Section: Text, Buttons, Image -->
     <div
       class="main flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl mx-auto px-6 py-8 space-y-6 md:space-y-0">
-
-      <!-- left side my pic -->
       <div class="right-side flex justify-center md:justify-end md:w-1/2">
         <img src="./assets/images/my-pic.jpg" alt="My Picture" class="my-pic" />
       </div>
 
-      <!-- right side -->
       <div class="left-side text-center md:text-left space-y-4 md:w-1/2">
-
         <div class="flex flex-col items-center mb-4">
-          <ul class="mx-auto flex items-center justify-center gap-6 ]">
+          <ul class="mx-auto flex items-center justify-center gap-6">
             <li>
               <a href="https://www.linkedin.com/in/dmalhasan/" target="_blank" rel="noopener">
                 <img class="w-5 hover:scale-110 transition-transform duration-200" src="./assets/icons/linkedin.svg"
@@ -76,12 +71,10 @@
             </li>
           </ul>
         </div>
-        <h1 class="text-lg md:text-3xl font-bold">Hello, I’m <span class="my-name">Al
-            Hasan</span> </h1>
+        <h1 class="text-lg md:text-3xl font-bold">Hello, I’m <span class="my-name">Al Hasan</span></h1>
         <div class="animated-title-wrapper">
-          <h2 id="animated-title" class=" text-2xl mt-4 md:text-2xl font-semibold"></h2>
+          <h2 id="animated-title" class="text-2xl mt-4 md:text-2xl font-semibold"></h2>
         </div>
-
         <p class="text-sm mt-2 md:text-base">
           Knack of building web applications with <strong>Front</strong> 💻 and <strong>Backend</strong> ⚙️ operations.
         </p>
@@ -433,7 +426,8 @@
     }
     window.onload = type;
   </script>
-
+  <!-- <script src="particle.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/dist/tsparticles.min.js"></script> -->
 </body>
 
 </html>

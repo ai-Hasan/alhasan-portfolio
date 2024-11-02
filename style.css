@@ -13,6 +13,12 @@
   padding: 2rem 1rem;
 }
 
+@media (max-width: 700px) {
+  .main {
+    padding: 0.5rem 1rem;
+  }
+}
+
 .left-side,
 .right-side {
   flex: 1 1 50%; /* Flex-basis at 50% for equal width */
@@ -38,6 +44,24 @@
   padding: 1rem;
 }
 
+@media (max-width: 780px) {
+  .my-pic {
+    box-shadow: 0 4px 1px 1px #1788ae;
+    height: 300px;
+    width: 300px;
+    margin: 0px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .my-pic {
+    height: 250px;
+    width: 250px;
+    margin: 0px;
+  }
+}
+
 .hover-underline {
   position: relative;
 }
@@ -58,6 +82,12 @@
   width: 50%;
 }
 
+@media (max-width: 640px) {
+  .hover-underline {
+    font-size: 10px;
+  }
+}
+
 .my-name {
   color: #1788ae;
   font-size: 25px;
@@ -73,9 +103,19 @@
 /* Adjust for smaller screens */
 @media (max-width: 640px) {
   .animated-title-wrapper {
-    height: 30px; /* Adjusted height for smaller screens */
+    height: 30px;
+    padding: 5px; /* Adjusted height for smaller screens */
   }
   #animated-title {
     font-size: 1rem; /* Reduce font size for smaller screens */
   }
 }
+
+/* #tsparticles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
