@@ -11,23 +11,24 @@
 </head>
 
 <body class="bg-[#111] text-white font-['Nunito']">
+
   <section id="home-section" class="flex flex-col justify-between max-h-screen relative">
     <div id="tsparticles"></div>
-
-
     <header
-      class="flex items-center justify-between w-full px-4 py-2 mt-4 max-w-screen-xl mx-auto sm:px-2 sm:py-1 sm:mt-2">
+      class="flex items-center justify-between w-full  px-4 py-2 mt-4 max-w-screen-xl mx-auto sm:px-2 sm:py-1 sm:mt-2">
 
       <!-- Navbar Logo -->
       <img src="./assets/icons/name-logo.svg" alt="" />
+
+
       <!-- Navbar -->
-      <nav class="px-4  rounded-md" style=" background-color: #1788ae;">
-        <div class="flex justify-center font-semibold  space-x-2 sm:space-x-4">
-          <a href="#home-section" class="text-black  text-xl px-2 sm:px-4 py-1 sm:py-2rounded-md hover-underline">About
+      <nav class="px-4  rounded-md bg-[#1788ae] ">
+        <div class="flex justify-center font-semibold space-x-2 sm:space-x-4 relative">
+          <a href="#home-section" id="about-link" class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">About
             Me</a>
-          <a href="#projects-section"
-            class="text-black text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md hover-underline">Projects</a>
-          <a href="#myskills" class="text-black text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md hover-underline">Skills</a>
+          <a href="#projects-section" id="projects-link"
+            class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">Projects</a>
+          <a href="#myskills" id="skills-link" class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">Skills</a>
         </div>
       </nav>
       <!-- Social Links -->
@@ -41,15 +42,18 @@
             alt="WhatsApp Icon" class="w-6 h-6" />
         </a>
       </div>
+
     </header>
 
+
     <div
-      class="main flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl mx-auto px-6 py-8 space-y-6 md:space-y-0">
+      class="main flex flex-col md:flex-row items-center justify-between w-full max-w-screen-xl mx-auto space-y-6 md:space-y-0">
+
       <div class="right-side flex justify-center md:justify-end md:w-1/2">
         <img src="./assets/images/my-pic.jpg" alt="My Picture" class="my-pic" />
       </div>
 
-      <div class="left-side text-center md:text-left space-y-4 md:w-1/2">
+      <div class="left-side mr-5 text-center md:text-left space-y-4 md:w-1/2">
         <div class="flex flex-col items-center mb-4">
           <ul class="mx-auto flex items-center justify-center gap-6">
             <li>
@@ -72,7 +76,8 @@
             </li>
           </ul>
         </div>
-        <h1 class="text-lg md:text-3xl font-bold">Hello, I’m <span class="my-name">Al Hasan</span></h1>
+        <h1 class="text-lg md:text-3xl font-bold">Hello, I’m <span class="text-[#1788ae] my-name">Al Hasan</span>
+        </h1>
         <div class="animated-title-wrapper">
           <h2 id="animated-title" class="text-2xl mt-4 md:text-2xl font-semibold"></h2>
         </div>
@@ -427,6 +432,31 @@
     }
     window.onload = type;
   </script>
+  <script>
+    // Function to handle link click
+    function setActiveLink(clickedId) {
+      // Get all links
+      const links = document.querySelectorAll('.nav-link');
+
+      // Remove 'active' class from all links
+      links.forEach(link => link.classList.remove('active'));
+
+      // Add 'active' class to the clicked link
+      document.getElementById(clickedId).classList.add('active');
+    }
+
+    // Attach click event to each link
+    document.getElementById('about-link').onclick = () => setActiveLink('about-link');
+    document.getElementById('projects-link').onclick = () => setActiveLink('projects-link');
+    document.getElementById('skills-link').onclick = () => setActiveLink('skills-link');
+
+  </script>
+  <script>
+    window.onbeforeunload = function () {
+      window.scrollTo(0, 0);
+    };
+  </script>
+
   <script src="particle.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/dist/tsparticles.min.js"></script>
 </body>

@@ -1,16 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:wght@300;400;600;700;800;900&family=Russo+One&family=Spartan:wght@700;800;900&display=swap");
 
-#home-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .main {
   padding-right: 10px;
-  margin: auto;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
 }
 
 @media (max-width: 700px) {
@@ -23,16 +16,6 @@
 .right-side {
   flex: 1 1 50%; /* Flex-basis at 50% for equal width */
   padding: 1rem;
-}
-
-.left-side {
-  text-align: center;
-  margin-right: 20px;
-}
-
-.right-side {
-  display: flex;
-  justify-content: center;
 }
 
 .my-pic {
@@ -62,38 +45,18 @@
   }
 }
 
-.hover-underline {
-  position: relative;
-}
-
-.hover-underline::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 0;
-  height: 2px;
-  background-color: #1788ae;
-  transition: width 0.3s ease;
-}
-
-.hover-underline:hover::after {
-  width: 50%;
-}
-
 @media (max-width: 640px) {
-  .hover-underline {
+  .nav-link {
     font-size: 10px;
     padding: 0;
-    margin: 2px;
+    margin: 4px;
   }
 }
 
 .my-name {
-  color: #1788ae;
-  font-size: 25px;
+  font-size: 24px;
 }
+
 .animated-title-wrapper {
   height: 40px; /* Fixed height for normal screens */
   display: flex;
@@ -106,7 +69,7 @@
 @media (max-width: 640px) {
   .animated-title-wrapper {
     height: 30px;
-    padding: 5px; /* Adjusted height for smaller screens */
+    padding-bottom: 5px; /* Adjusted height for smaller screens */
   }
   #animated-title {
     font-size: 1rem; /* Reduce font size for smaller screens */
@@ -120,4 +83,14 @@
   width: 100%;
   height: 100%;
   z-index: -1;
+}
+
+/* Default nav-link style */
+.nav-link {
+  color: black;
+}
+
+/* Active link style */
+.nav-link.active {
+  color: white;
 }
