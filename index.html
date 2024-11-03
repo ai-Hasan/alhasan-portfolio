@@ -8,12 +8,79 @@
   <link rel="stylesheet" href="output.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- <style>
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .autoplay-progress {
+      position: absolute;
+      right: 16px;
+      bottom: 16px;
+      z-index: 10;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+    }
+
+    .autoplay-progress svg {
+      --progress: 0;
+      position: absolute;
+      left: 0;
+      top: 0px;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      stroke-width: 4px;
+      stroke: #1788ae;
+      fill: none;
+      stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+      stroke-dasharray: 125.6;
+      transform: rotate(-90deg);
+    }
+  </style> -->
+
 </head>
 
 <body class="bg-[#111] text-white font-['Nunito']">
 
+  <div class="navbar">
+    <a href="#home-section" class="sidebar-icon" aria-label="Home" data-label="Home">
+      <i class="fas fa-home"></i> <!-- Home Icon -->
+    </a>
+    <a href="#myskills" class="sidebar-icon" aria-label="Skills" data-label="Skills">
+      <i class="fas fa-tools"></i> <!-- Skills Icon -->
+    </a>
+    <a href="#projects-section" class="sidebar-icon" aria-label="Projects" data-label="Experience">
+      <i class="fas fa-briefcase"></i> <!-- Projects Icon -->
+    </a>
+    <a href="#contact-section" class="sidebar-icon" aria-label="Contact" data-label="Contact Me">
+      <i class="fas fa-envelope"></i> <!-- Contact Icon -->
+    </a>
+
+  </div>
+
+
+
+
+
+
   <section id="home-section" class="flex flex-col justify-between max-h-screen relative">
+
+
     <div id="tsparticles"></div>
+
     <header
       class="flex items-center justify-between w-full  px-4 py-2 mt-4 max-w-screen-xl mx-auto sm:px-2 sm:py-1 sm:mt-2">
 
@@ -24,10 +91,10 @@
       <!-- Navbar -->
       <nav class="px-4  rounded-md bg-[#1788ae] ">
         <div class="flex justify-center font-semibold space-x-2 sm:space-x-4 relative">
-          <a href="#home-section" id="about-link" class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">About
-            Me</a>
+          <a href="#home-section" id="about-link" class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">Home
+          </a>
           <a href="#projects-section" id="projects-link"
-            class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">Projects</a>
+            class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">Experience</a>
           <a href="#myskills" id="skills-link" class="nav-link text-xl px-2 sm:px-4 py-1 sm:py-2 rounded-md">Skills</a>
         </div>
       </nav>
@@ -98,7 +165,6 @@
     </div>
     <img src="./assets/images/shape-bg.png" alt="" />
   </section>
-
 
   <!-- Experience Section -->
   <section id="projects-section" class="max-w-screen-xl mx-auto mt-12 px-4 relative pb-8 sm:pb-16">
@@ -292,57 +358,185 @@
       <div class=" w-[2px] hidden sm:block bg-[#1788ae] absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
   </section>
 
-  <section id="myskills" class=" max-w-screen-xl mx-auto px-4 pb-12">
-    <h2
-      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
-      Tools & Skills </h2>
+  <section id="myskills" class=" max-w-screen-xl mx-auto px-4 pb-12 ">
+    <div class="flex flex-col items-center justify-center">
+      <h2
+        class="text-2xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+        Tools & Technologies
+      </h2>
+      <i class="fas fa-arrow-down  text-[#1788ae] text-3xl "></i>
+    </div>
     <div class="flex flex-wrap items-center justify-center gap-6 mt-8 h-[80px] overflow-hidden bg-gray-100 rounded-lg">
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        HTML </div>
+        <i class="fab fa-html5" style="color: #FF5733;"></i> <!-- HTML Icon in Orange -->
+
+
+        HTML
+      </div>
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        CSS </div>
+        <i class="fab fa-css3-alt" style="color: #FFA500;"></i> <!-- CSS Icon in Orange -->
+
+        CSS
+      </div>
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        JavaScript </div>
-      <div <div
-        class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        BottStrap </div>
-      <div <div
-        class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        Tailwind CSS </div>
+        <i class="fab fa-js" style="color: #F7DF1E ;"></i> <!-- JavaScript Icon in Yellow -->
+
+        JavaScript
+      </div>
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        ReactJS </div>
+        <i class="fab fa-bootstrap" style="color: #281248;"></i> <!-- Bootstrap Icon in Purple -->
+
+        BootStrap
+      </div>
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        MongoDB </div>
+
+        Tailwind CSS
+      </div>
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        Express </div>
+        <i class="fab fa-react" style="color: #61DAFB;"></i> <!-- ReactJS Icon in Light Blue -->
+
+        ReactJS
+      </div>
+      <div
+        class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
+        <i class="fab fa-mdb" style="color: #4DB33D;"></i> <!-- MongoDB Icon in Green -->
+
+        MongoDB
+      </div>
+      <div
+        class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
+        <i class="fab fa-node-js" style="color: #8CC84B;"></i> <!-- Express Icon in Light Green -->
+
+        Express
+      </div>
 
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        WordPress </div>
+        <i class="fab fa-wordpress" style="color: #1308e4;"></i> <!-- WordPress Icon in Dark Blue -->
+
+        WordPress
+      </div>
 
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        Git & GitHub </div>
+        <i class="fab fa-git" style="color: #F05032;"></i> <!-- Git Icon in Red -->
+
+        Git
+      </div>
+      <div
+        class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
+        <i class="fab fa-github" style="color: #181717;"></i> <!-- GitHub Icon in Black -->
+
+        GitHub
+      </div>
 
       <div
         class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
-        Node.js </div>
+        <i class="fab fa-netlify" style="color: #00B140;"></i> <!-- Netlify Icon in Green -->
+        Netlify
+      </div>
+
+      <div
+        class="px-4 py-2 bg-[#1788ae] text-white font-semibold text-lg rounded-md shadow-md transition-transform transform hover:scale-105 hover:bg-[#1496c3]">
+        <i class="fab fa-node-js" style="color: #8CC84B;"></i> <!-- Node.js Icon in Light Green -->
+
+        Node.js
+      </div>
     </div>
   </section>
-
-
+  <!-- 
   <section class="max-w-screen-xl mx-auto px-4 pb-12">
-    <h2
-      class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
-      Let's Connect
-    </h2>
-    <div class="flex flex-col md:flex-row items-center mt-10">
+    <div class="flex flex-col items-center justify-center">
+      <h2
+        class="text-2xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+        Experiment's & Open Source
+      </h2>
+      <i class="fas fa-arrow-down  text-[#1788ae] text-3xl "></i>
+      
+  </div>
+
+
+  <div class="swiper mySwiper !py-14">
+    <div class="swiper-wrapper items-center">
+      <div class="swiper-slide px-4">
+        <div
+          class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab">
+          <img
+            class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
+            src="/assets/images/my-pic.jpg" alt="testimonial 3" />
+          <div class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative">
+            <p class="text-sm md:text-base mb-2">
+              Al Hasan was a wonderful developer to work with! He anticipated
+              everything I need to consider for my website. He also went the
+              extra mile and added details that I hadn't considered! He is
+              helping my business grow, and I will definitely work with him
+              again!”
+
+            </p>
+            <h2 class="text-right text-[#459bd5] font-bold text-2xl md:text-4xl">
+              Arman Khan
+            </h2>
+            <h5 class="text-right text-[#459bd5] text-base md:text-lg">
+              Software Engineer
+            </h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide px-4">
+        <div
+          class="flex flex-col md:flex-row max-w-[800px] items-center rounded-lg p-9 shadow-[0_0px_50px_rgba(59,130,246,0.6)] cursor-grab">
+          <img
+            class="shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full drop-shadow-[0_0px_80px_rgba(59,130,246,1)]"
+            src="/assets/images/my-pic.jpg" alt="testimonial 3" />
+          <div class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative">
+            <p class="text-sm md:text-base mb-2">
+              Al Hasan was a wonderful developer to work with! He anticipated
+              everything I need to consider for my website. He also went the
+              extra mile and added details that I hadn't considered! He is
+              helping my business grow, and I will definitely work with him
+              again!”
+
+            </p>
+            <h2 class="text-right text-[#459bd5] font-bold text-2xl md:text-4xl">
+              Arman Khan
+            </h2>
+            <h5 class="text-right text-[#459bd5] text-base md:text-lg">
+              Software Engineer
+            </h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+    <div class="autoplay-progress">
+      <svg viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="20"></circle>
+      </svg>
+      <span></span>
+    </div>
+  </div>
+  </section> -->
+
+
+  <section id="contact-section" class="max-w-screen-xl mx-auto mt-10 px-4 pb-4">
+    <div class="flex flex-col items-center justify-center">
+      <h2
+        class="text-3xl sm:text-[40px] bg-[#111] relative z-10 font-bold px-4 py-2 w-max mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+        Let's Get In Touch
+      </h2>
+      <i class="fas fa-arrow-down  text-[#1788ae] text-3xl "></i>
+    </div>
+    <div class="flex flex-col md:flex-row items-center ">
       <div class="w-full">
         <img src="./assets/images/contact-me.png" alt="" />
       </div>
@@ -413,50 +607,8 @@
 
     </ul>
   </footer>
-  <script>
-    const text = "Full Stack Web Developer 👨‍💻🌐📊";
-    let index = 0;
-    const speed = 100;
-    function type() {
-      if (index < text.length) {
-        document.getElementById("animated-title").innerHTML += text.charAt(index);
-        index++;
-        setTimeout(type, speed);
-      } else {
-        setTimeout(() => {
-          document.getElementById("animated-title").innerHTML = "";
-          index = 0;
-          setTimeout(type, 1000);
-        }, 3000);
-      }
-    }
-    window.onload = type;
-  </script>
-  <script>
-    // Function to handle link click
-    function setActiveLink(clickedId) {
-      // Get all links
-      const links = document.querySelectorAll('.nav-link');
-
-      // Remove 'active' class from all links
-      links.forEach(link => link.classList.remove('active'));
-
-      // Add 'active' class to the clicked link
-      document.getElementById(clickedId).classList.add('active');
-    }
-
-    // Attach click event to each link
-    document.getElementById('about-link').onclick = () => setActiveLink('about-link');
-    document.getElementById('projects-link').onclick = () => setActiveLink('projects-link');
-    document.getElementById('skills-link').onclick = () => setActiveLink('skills-link');
-
-  </script>
-  <script>
-    window.onbeforeunload = function () {
-      window.scrollTo(0, 0);
-    };
-  </script>
-
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="index.js" defer></script>
   <script src="particle.js" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@latest/dist/tsparticles.min.js"></script>
 </body>
