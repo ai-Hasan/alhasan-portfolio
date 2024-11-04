@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:wght@300;400;600;700;800;900&family=Russo+One&family=Spartan:wght@700;800;900&display=swap");
 
+.texts-justify {
+  text-align: justify;
+}
+
 .navbar {
   position: fixed;
   top: 50%; /* Vertically centers the navbar */
@@ -64,6 +68,25 @@
     width: 300px;
     margin: 0px;
     padding: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #cal-pic {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .texts-justify {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .smartcalc {
+    font-size: 12px;
   }
 }
 
