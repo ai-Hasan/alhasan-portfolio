@@ -1,7 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&family=Nunito:wght@300;400;600;700;800;900&family=Russo+One&family=Spartan:wght@700;800;900&display=swap");
 
-.texts-justify {
+@media (max-width: 760px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+}
+
+@media (max-width: 760px) {
+  .mySwiper {
+    padding: 30px 0 !important ;
+  }
+}
+
+#parafull {
   text-align: justify;
 }
 
@@ -72,15 +85,30 @@
 }
 
 @media (max-width: 500px) {
-  #cal-pic {
-    height: 200px;
-    width: 200px;
+  .swiper-slide div {
+    padding: 12px 10px;
   }
 }
 
 @media (max-width: 500px) {
-  .texts-justify {
+  #cal-pic {
+    height: 200px;
+    width: 200px;
+    margin: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  #parafull,
+  #paraskills {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .testimonial-text {
+    padding-top: 0;
+    margin: 0;
   }
 }
 
