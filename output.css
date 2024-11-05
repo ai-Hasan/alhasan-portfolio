@@ -1554,3 +1554,7 @@ video {
 #parafull {
   color: white;
 }
+
+#home-section {
+  height: 100vh !important;
+}
