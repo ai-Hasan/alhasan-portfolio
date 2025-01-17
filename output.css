@@ -1428,37 +1428,6 @@ video {
   }
 }
 
-.navbar {
-  position: fixed;
-  top: 50%; /* Vertically centers the navbar */
-  right: 0; /* Positions it on the left side */
-  transform: translateY(-50%); /* Offsets by 50% to fully center */
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-  background-color: Semi-transparent;
-  border-radius: 0 8px 8px 0;
-  z-index: 1000;
-}
-
-.sidebar-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 20%;
-  color: #1788ae;
-  font-size: 1.5rem;
-  transition: transform 0.2s, background-color 0.3s;
-}
-
-.sidebar-icon:hover {
-  transform: scale(1.1);
-  background-color: #f2f2f2;
-}
-
 .main {
   padding-right: 10px;
   padding: 2rem 2rem;
@@ -1553,8 +1522,4 @@ video {
 
 #parafull {
   color: white;
-}
-
-#home-section {
-  height: 100vh !important;
 }
